@@ -80,7 +80,7 @@ function App() {
         {/* Content */}
         <div className="relative z-10 text-center max-w-2xl mx-auto px-4">
           <p className="text-xl md:text-2xl font-light mb-4 font-aesthet">capture more for less.</p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-2 font-aesthet">project: euphoria</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-2 font-aesthet"><span className="italic">project: euphoria</span></h1>
 
           {/* Email Sign Up */}
           <div className="mt-20">
@@ -300,23 +300,126 @@ function App() {
 
             {/* Caption */}
             <p className="text-center mt-4 text-sm text-sage/60 italic font-caslon">
-              * The demo video will showcase current features of project:euphoria, from setup to sharing
+              * The demo video will showcase current features of <span className="italic">project: euphoria</span>, from setup to sharing
             </p>
           </div>
         </div>
       </section>
 
       {/* Versatile Event Solutions */}
-      <section className="py-16 bg-[#E9E4DD]">
+      <section className="py-12 md:py-16 bg-[#E9E4DD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-sage font-aesthet">Perfect for Every Occasion</h2>
-            <p className="mt-4 text-lg text-sage/80 max-w-2xl mx-auto font-caslon">
-              Project Euphoria adapts to any event, enhancing engagement and providing customized branding opportunities.
+            <h2 className="text-2xl md:text-3xl font-extrabold text-sage font-aesthet">Perfect for Every Occasion</h2>
+            <p className="mt-3 md:mt-4 text-base md:text-lg text-sage/80 max-w-2xl mx-auto font-caslon">
+              <span className="italic">project: euphoria</span> adapts to any event, enhancing engagement and providing customized branding opportunities.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          {/* Mobile scrolling container (visible on small screens only) */}
+          <div className="mt-8 md:hidden relative">
+            <div className="overflow-x-auto pb-6 -mx-4 px-4 flex space-x-4 snap-x snap-mandatory scrollbar-hide">
+              {/* Card 1: Corporate Events */}
+              <div className="snap-start flex-shrink-0 w-[85%] max-w-[260px]">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                  <div className="p-5">
+                    <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-medium text-sage mb-2 font-aesthet">Corporate Events</h3>
+                    <p className="text-sm text-sage/70 font-caslon">
+                      Team building & branded memories
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2: Weddings */}
+              <div className="snap-start flex-shrink-0 w-[85%] max-w-[260px]">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                  <div className="p-5">
+                    <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-medium text-sage mb-2 font-aesthet">Weddings</h3>
+                    <p className="text-sm text-sage/70 font-caslon">
+                      Elegant templates for special days
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Parties */}
+              <div className="snap-start flex-shrink-0 w-[85%] max-w-[260px]">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                  <div className="p-5">
+                    <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-medium text-sage mb-2 font-aesthet">Parties</h3>
+                    <p className="text-sm text-sage/70 font-caslon">
+                      Fun props for all ages
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 4: Festivals */}
+              <div className="snap-start flex-shrink-0 w-[85%] max-w-[260px]">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                  <div className="p-5">
+                    <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-medium text-sage mb-2 font-aesthet">Festivals</h3>
+                    <p className="text-sm text-sage/70 font-caslon">
+                      Boost community engagement
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 5: Marketing */}
+              <div className="snap-start flex-shrink-0 w-[85%] max-w-[260px]">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+                  <div className="p-5">
+                    <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-medium text-sage mb-2 font-aesthet">Marketing</h3>
+                    <p className="text-sm text-sage/70 font-caslon">
+                      Amplify brand awareness
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile scroll indicator dots */}
+            <div className="flex justify-center mt-4 space-x-2">
+              <span className="h-1.5 w-4 rounded-full bg-sage"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-sage/30"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-sage/30"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-sage/30"></span>
+              <span className="h-1.5 w-1.5 rounded-full bg-sage/30"></span>
+            </div>
+
+            {/* Swipe instruction for mobile */}
+            <p className="text-xs text-center text-sage/50 mt-3 italic font-caslon">Swipe to see more</p>
+          </div>
+
+          {/* Desktop grid (hidden on mobile) */}
+          <div className="hidden md:grid mt-12 gap-4 md:grid-cols-2 lg:grid-cols-5">
             {/* Corporate Events */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="p-5">
@@ -721,41 +824,31 @@ function App() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-sage font-aesthet">Frequently Asked Questions</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-sage/70 font-caslon">
-              Everything you need to know about Project Euphoria
-            </p>
-          </div>
-
-          <div className="mt-12 max-w-3xl mx-auto divide-y divide-sage/10 rounded-xl bg-white shadow-xl overflow-hidden">
+      <section id="faq" className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl text-center font-aesthetNova text-sage mb-12">Frequently Asked Questions</h2>
+          <div className="max-w-3xl mx-auto rounded-lg overflow-hidden shadow-md bg-white divide-y divide-sage/10">
             {[
               {
-                question: "When will Project Euphoria launch?",
-                answer: "We're launching in phases, with beta access starting Fall 2024. Early access users will receive exclusive perks and discounted pricing. Sign up now to secure your spot!"
+                question: <>When will <span className="italic">project: euphoria</span> launch?</>,
+                answer: <>The official launch of <span className="italic">project: euphoria</span> is scheduled for Q4 2023. Join our waitlist to be among the first to experience this new dimension of entertainment.</>
               },
               {
-                question: "What devices are compatible with Project Euphoria?",
-                answer: "Project Euphoria works on any modern smartphone (iOS 14+ and Android 10+). No special equipment needed—just download our app, and you're ready to create photostrips anywhere."
+                question: <>What devices are compatible with <span className="italic">project: euphoria</span>?</>,
+                answer: <><span className="italic">project: euphoria</span> is designed to work seamlessly with all modern VR headsets, including Meta Quest, Valve Index, and HTC Vive. We also offer a companion mobile app for iOS and Android devices.</>
               },
               {
-                question: "How does the photo printing process work?",
-                answer: "For physical prints, choose your favorite photostrips in the app and select 'Order Prints.' We partner with professional print labs to deliver high-quality prints directly to your address within 3-5 business days."
+                question: <>Is <span className="italic">project: euphoria</span> suitable for all ages?</>,
+                answer: <>While <span className="italic">project: euphoria</span> is designed primarily for adults, we offer family-friendly experiences suitable for ages 13+. Parental guidance is recommended for younger users.</>
               },
               {
-                question: "Can I customize the photostrip templates?",
-                answer: "Absolutely! All plans include customization options. Premium tiers offer advanced branding capabilities, including custom colors, logos, event hashtags, and even personalized animations."
+                question: <>How customizable are the experiences?</>,
+                answer: <>Highly customizable! You can adjust themes, intensity levels, duration, and even create custom scenarios. Premium subscribers gain access to advanced customization options and exclusive content.</>
               },
               {
-                question: "How does event setup work?",
-                answer: "Setup takes just minutes. Create an event in the app, customize your photostrip templates, and generate a unique QR code. Share this code with guests who can then scan it to access your custom photobooth experience."
+                question: <>How does the subscription model work?</>,
+                answer: <>We offer three tiers: Explorer (free), Voyager ($14.99/month), and Pioneer ($29.99/month). Each tier unlocks more features, experiences, and customization options. Visit our pricing section for complete details.</>
               },
-              {
-                question: "Is there a limit to how many photos I can take?",
-                answer: "No limits! Take as many photostrips as you'd like. All photos are stored securely in the cloud and available to download or share instantly."
-              }
             ].map((faq, index) => (
               <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
             ))}
@@ -882,7 +975,7 @@ function App() {
           <div className="border-t border-white/10 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm text-white/40 font-caslon">
-                &copy; 2025 Project Euphoria. All rights reserved.
+                &copy; 2025 <span className="italic">project: euphoria</span>. All rights reserved.
               </p>
               <div className="mt-4 md:mt-0">
                 <p className="text-xs text-white/40 font-caslon">
@@ -898,7 +991,7 @@ function App() {
 }
 
 // New FAQ Accordion Component 
-const FaqAccordion = ({ question, answer }: { question: string; answer: string }) => {
+const FaqAccordion = ({ question, answer }: { question: React.ReactNode; answer: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
