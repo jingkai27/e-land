@@ -1,0 +1,42 @@
+/* Caslon Pro Font */
+@font-face {
+    font-family: 'Caslon Pro';
+    src: url('/fonts/caslon-pro/caslon-pro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Annabel Font */
+@font-face {
+    font-family: 'Annabel';
+    src: url('/fonts/annabel/annabel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Aesthet Nova Font */
+@font-face {
+    font-family: 'Aesthet Nova';
+    src: url('/fonts/aesthet-nova/aesthet_nova_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aesthet Nova';
+    src: url('/fonts/aesthet-nova/aesthet_nova_bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aesthet Nova';
+    src: url('/fonts/aesthet-nova/aesthet_nova_light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
