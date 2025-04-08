@@ -247,13 +247,61 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-sage font-aesthet">
-              Retro charm meets modern tech
+              Demo
             </h2>
-            <p className="mt-4 text-lg text-sage/80 font-caslon">Click on a feature to learn more</p>
           </div>
 
-          <div className="mt-16">
-            <FeatureAccordion />
+          <div className="mt-16 max-w-4xl mx-auto">
+            {/* Video Placeholder */}
+            <div className="relative rounded-xl overflow-hidden shadow-xl border-2 border-sage/20 bg-gradient-to-b from-cream to-white">
+              {/* Decorative elements */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sage/30 via-sage to-sage/30"></div>
+              <div className="absolute -right-12 -top-12 w-24 h-24 rounded-full bg-sage/10"></div>
+              <div className="absolute -left-12 -bottom-12 w-32 h-32 rounded-full bg-sage/5"></div>
+
+              <div className="aspect-w-16 aspect-h-9 p-6">
+                <div className="flex items-center justify-center">
+                  <div className="text-center px-6 py-12">
+                    {/* Play button with hover effect */}
+                    <div className="relative mx-auto w-24 h-24 mb-6 group">
+                      <div className="absolute inset-0 rounded-full bg-sage/20 group-hover:bg-sage/30 transition-all duration-300 animate-pulse"></div>
+                      <div className="absolute inset-2 rounded-full bg-white flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-sage group-hover:text-sage/80 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-medium text-sage font-aesthet tracking-wide mb-2">Demo Video Coming Soon</h3>
+                    <p className="mt-2 text-sage/70 font-caslon text-lg max-w-lg mx-auto leading-relaxed">
+                      Watch how our digital photobooth transforms events and creates lasting memories in seconds
+                    </p>
+
+                    {/* Video specs/details */}
+                    <div className="mt-8 flex justify-center space-x-6">
+                      <div className="flex items-center text-sm text-sage/60">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>1:45 mins</span>
+                      </div>
+                      <div className="flex items-center text-sm text-sage/60">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span>HD Quality</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Caption */}
+            <p className="text-center mt-4 text-sm text-sage/60 italic font-caslon">
+              * The demo video will showcase current features of project:euphoria, from setup to sharing
+            </p>
           </div>
         </div>
       </section>
@@ -676,38 +724,41 @@ function App() {
       <section id="faq" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-sage font-aesthet">Frequently asked questions</h2>
+            <h2 className="text-3xl font-extrabold text-sage font-aesthet">Frequently Asked Questions</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-sage/70 font-caslon">
+              Everything you need to know about Project Euphoria
+            </p>
           </div>
-          <div className="mt-12">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12">
-              {[
-                {
-                  question: "When will the app launch?",
-                  answer: "We're targeting a summer 2024 launch. Sign up for early access to be the first to know!"
-                },
-                {
-                  question: "Do I need special equipment?",
-                  answer: "Nope! Just your smartphone and our app. We'll handle the rest."
-                },
-                {
-                  question: "Can I print my photostrips?",
-                  answer: "Yes! You can order professional prints directly through the app or export for printing anywhere."
-                },
-                {
-                  question: "Is there a limit to how many photos I can take?",
-                  answer: "None at all! Take as many photostrips as you'd like."
-                }
-              ].map((faq) => (
-                <div key={faq.question}>
-                  <dt className="text-lg leading-6 font-medium text-sage font-caslon">
-                    {faq.question}
-                  </dt>
-                  <dd className="mt-2 text-base text-sage/80 font-caslon">
-                    {faq.answer}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+
+          <div className="mt-12 max-w-3xl mx-auto divide-y divide-sage/10 rounded-xl bg-white shadow-xl overflow-hidden">
+            {[
+              {
+                question: "When will Project Euphoria launch?",
+                answer: "We're launching in phases, with beta access starting Fall 2024. Early access users will receive exclusive perks and discounted pricing. Sign up now to secure your spot!"
+              },
+              {
+                question: "What devices are compatible with Project Euphoria?",
+                answer: "Project Euphoria works on any modern smartphone (iOS 14+ and Android 10+). No special equipment needed—just download our app, and you're ready to create photostrips anywhere."
+              },
+              {
+                question: "How does the photo printing process work?",
+                answer: "For physical prints, choose your favorite photostrips in the app and select 'Order Prints.' We partner with professional print labs to deliver high-quality prints directly to your address within 3-5 business days."
+              },
+              {
+                question: "Can I customize the photostrip templates?",
+                answer: "Absolutely! All plans include customization options. Premium tiers offer advanced branding capabilities, including custom colors, logos, event hashtags, and even personalized animations."
+              },
+              {
+                question: "How does event setup work?",
+                answer: "Setup takes just minutes. Create an event in the app, customize your photostrip templates, and generate a unique QR code. Share this code with guests who can then scan it to access your custom photobooth experience."
+              },
+              {
+                question: "Is there a limit to how many photos I can take?",
+                answer: "No limits! Take as many photostrips as you'd like. All photos are stored securely in the cloud and available to download or share instantly."
+              }
+            ].map((faq, index) => (
+              <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
+            ))}
           </div>
         </div>
       </section>
@@ -716,15 +767,15 @@ function App() {
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-sage font-caslon">Get in touch</h2>
+            <h2 className="text-3xl font-extrabold text-sage font-aesthet">Get in touch</h2>
             <p className="mt-4 text-lg text-sage/80 font-caslon">
               Questions? We're here to help!
             </p>
           </div>
           <div className="mt-12 text-center">
             <a
-              href="mailto:support@snapstrip.app"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sage hover:bg-sage/90 font-caslon"
+              href="mailto:@jingkai.t27@gmail.com"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sage hover:bg-sage/90 font-aesthet"
             >
               <Mail className="h-5 w-5 mr-2" />
               Contact Support
@@ -734,27 +785,148 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center space-x-6">
-            <a href="#" className="text-sage hover:text-dusty">
-              <Instagram className="h-6 w-6" />
-            </a>
-            <a href="#" className="text-sage hover:text-dusty">
-              <Facebook className="h-6 w-6" />
-            </a>
-            <a href="#" className="text-sage hover:text-dusty">
-              <Twitter className="h-6 w-6" />
-            </a>
+      <footer className="bg-[#2D3330] text-white/80">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          {/* Top section with columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {/* Brand column */}
+            <div>
+              <div className="flex items-center mb-6">
+                <span className="text-2xl font-bold text-white font-annabel">euphoria</span>
+              </div>
+              <p className="text-sm text-white/60 mb-6 font-caslon">
+                Reimagining the photobooth experience for the digital age.
+                Create unforgettable memories wherever you are.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-white hover:text-cream transition-colors">
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-white hover:text-cream transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a href="#" className="text-white hover:text-cream transition-colors">
+                  <Twitter className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-base font-medium text-white mb-6 font-aesthet tracking-wide">
+                Quick Links
+              </h3>
+              <ul className="space-y-3 text-sm font-caslon">
+                <li><a href="#features" className="text-white/60 hover:text-white transition-colors">Features</a></li>
+                <li><a href="#pricing" className="text-white/60 hover:text-white transition-colors">Pricing</a></li>
+                <li><a href="#faq" className="text-white/60 hover:text-white transition-colors">FAQ</a></li>
+                <li><a href="#contact" className="text-white/60 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors">Terms of Service</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-base font-medium text-white mb-6 font-aesthet tracking-wide">
+                Contact
+              </h3>
+              <ul className="space-y-3 text-sm font-caslon">
+                <li className="flex items-start">
+                  <Mail className="h-5 w-5 text-sage mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-white/60">@jingkai.t27@gmail.com</span>
+                </li>
+                <li className="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sage mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="text-white/60">
+                    8 Somapah Rd,
+                    <br />
+                    Singapore 487372
+
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Newsletter */}
+            <div>
+              <h3 className="text-base font-medium text-white mb-6 font-aesthet tracking-wide">
+                Stay Updated
+              </h3>
+              <p className="text-sm text-white/60 mb-4 font-caslon">Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+              <form className="space-y-2">
+                <div className="flex rounded-md overflow-hidden">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="w-full px-4 py-2 bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:ring-1 focus:ring-sage"
+                  />
+                  <button
+                    type="submit"
+                    className="flex-shrink-0 px-4 bg-sage text-white hover:bg-sage/90 transition-colors"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
+                </div>
+                <p className="text-xs text-white/40 font-caslon">We respect your privacy. Unsubscribe at any time.</p>
+              </form>
+            </div>
           </div>
-          <div className="mt-8 text-center text-base text-sage/70 font-caslon">
-            &copy; 2025 project: euphoria. All rights reserved.
+
+          {/* Divider */}
+          <div className="border-t border-white/10 mt-12 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-sm text-white/40 font-caslon">
+                &copy; 2025 Project Euphoria. All rights reserved.
+              </p>
+              <div className="mt-4 md:mt-0">
+                <p className="text-xs text-white/40 font-caslon">
+                  Designed with ♥ in California
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
     </div>
   );
 }
+
+// New FAQ Accordion Component 
+const FaqAccordion = ({ question, answer }: { question: string; answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="faq-item">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-sage/5 focus:outline-none transition-colors"
+      >
+        <span className="text-lg font-medium text-sage font-caslon">{question}</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className={`h-5 w-5 text-sage transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+        </svg>
+      </button>
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+      >
+        <div className="px-6 pb-4 pt-2 text-sage/70 font-caslon">
+          {answer}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const FeatureAccordion = () => {
   // Default to first feature (0)
